@@ -39,6 +39,14 @@ h1 {
     font-size: 2.4rem;
 }
 
+h2 {
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
 p {
     line-height: 2rem;
     font-size: 1.2rem;
@@ -106,4 +114,74 @@ p {
 .contenido-nosotros {
     display: grid;
     align-content: center;
+}
+
+.boton {
+    background-color: var(--primario);
+    display: block;
+    padding: var(--padding);
+    color: var(--claro);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border: solid 1px var(--primario);
+    transition: all .5s ease-in-out;
+}
+
+.boton:hover {
+    background-color: var(--claro);
+    color: var(--primario);
+}
+
+
+/* Venta */
+
+.venta {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 1rem;
+}
+
+.venta img {
+    width: 100%;
+}
+
+.destacada {
+    grid-column: 1 / 3;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-gap: 1rem;
+}
+
+@media (min-width: 768px) {
+    .venta {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, auto);
+    }
+}
+
+.card {
+    background-color: var(--claro);
+    padding: var(--padding);
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.card p {
+    font-size: .9rem;
+    line-height: 1.8rem;
+}
+
+.anuncio {
+    display: grid;
+}
+
+.anuncio .precio {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+.precio span {
+    font-weight: 300;
+    color: var(--primario);
 }
