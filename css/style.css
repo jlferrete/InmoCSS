@@ -1,0 +1,51 @@
+:root {
+    --primario: #7ABE47;
+    --secundario: #ffc845;
+    --negro: #000000;
+    --claro: #ffffff;
+    --gris: #eeeeee;
+    --oscuro: #57a42b;
+    --padding: 1rem;
+    --padding2: 2rem;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--gris);
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Header */
+
+.header {
+    margin-top: 2rem;
+    background-color: var(--primario);
+    padding: var(--padding);
+}
+
+.header .barra {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 2rem;
+    justify-content: center;
+}
+
+.header .menu {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.header .menu a {
+    text-align: center;
+    color: var(--claro);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
